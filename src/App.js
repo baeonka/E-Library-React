@@ -15,7 +15,7 @@ function App() {
         <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/books/1" render={() => <BookInfo books={books} />} />
-        <Route path="/books" render={() => <Books books={books} />} />
+        <Route path="/books" exact render={() => <Books books={books} />} />
         </Switch>
         <Footer />
       </div>
